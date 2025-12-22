@@ -1,1 +1,2 @@
-# portfolio_website
+# 
+Welcome to my portfolio website! This site showcases my projects, skills, and experience as a developer. Explore the different sections to learn more about my work, view live demos, and find links to my GitHub repositories. Thank you for visiting!
