@@ -29,7 +29,7 @@ const Portfolio = () => {
     linkedin: "bksaini078",
     github: "bksaini078",
     location: "Stuttgart, Germany",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3087&auto=format&fit=crop"
+    photo: "src/assets/bhupender_photo.png"
   };
 
   const experience = [
