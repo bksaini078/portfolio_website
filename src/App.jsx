@@ -23,7 +23,7 @@ const Portfolio = () => {
     linkedin: "bksaini078",
     github: "bksaini078",
     location: "Stuttgart, Germany",
-    photo: "src/assets/bhupender_photo.png"
+    photo: "/bhupender_photo.png"
   };
 
   return (
