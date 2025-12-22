@@ -37,7 +37,7 @@ const Portfolio = () => {
           </div>
           
           <nav className="flex space-x-8 font-sans text-[11px] font-bold uppercase tracking-widest text-slate-400">
-            {['overview', 'experience', 'research', 'publications'].map(tab => (
+            {['overview', 'experience', 'project', 'publications'].map(tab => (
               <button 
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -53,7 +53,7 @@ const Portfolio = () => {
       <main className="max-w-6xl mx-auto px-6 pt-40 pb-24">
         {activeTab === 'overview' && <OverviewTab profile={profile} />}
         {activeTab === 'experience' && <ExperienceTab />}
-        {activeTab === 'research' && <ResearchTab />}
+        {activeTab === 'project' && <ResearchTab />}
         {activeTab === 'publications' && <PublicationsTab />}
       </main>
 

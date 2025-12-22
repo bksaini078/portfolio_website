@@ -114,7 +114,7 @@ const ResearchTab = () => {
     <div className="space-y-16 animate-in slide-in-from-bottom-4 duration-500">
       <div className="border-b border-black pb-4">
         <h2 className="text-xs font-black uppercase tracking-[0.4em] font-sans text-slate-400">
-          Research Portfolio
+          Project Portfolio
         </h2>
       </div>
 
