@@ -56,6 +56,20 @@ const experience = [
 		],
 		icon: <Award className="text-blue-900" size={20} />,
 	},
+	{
+		role: 'Network Engineer',
+		company: 'Religare Technologies Pvt. Ltd.',
+		location: 'New Delhi, India',
+		period: 'Oct. 2009 – Mar. 2011',
+		points: [
+			'Managed enterprise network administration to ensure stable and secure system operations.',
+			'Resolved technical issues related to Windows-based systems, trading software, and network infrastructure.',
+			'Administered and troubleshot LAN and WAN environments, improving network reliability and performance.',
+			'Applied networking protocol knowledge to support system integration and operational workflows.',
+			'Completed formal training in networking and Windows operating systems, building strong proficiency in enterprise IT systems.',
+		],
+		icon: <Award className="text-amber-700" size={20} />,
+	},
 ];
 
 const education = [
@@ -77,30 +91,30 @@ const education = [
 
 const ExperienceTab = () => {
 	return (
-		<div className="space-y-16 animate-in slide-in-from-bottom-4 duration-500">
-			<div className="border-b border-black pb-4">
+		<div className="space-y-8 animate-in slide-in-from-bottom-4 duration-500">
+			<div className="border-b border-black pb-3">
 				<h2 className="text-xs font-black uppercase tracking-[0.4em] font-sans text-slate-400">
 					Experience &amp; Education
 				</h2>
 			</div>
 
 			{/* Professional Timeline (ResearchTab-like layout) */}
-			<section className="space-y-8">
+			<section className="space-y-4">
 				<h3 className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-500">
 					Professional Timeline
 				</h3>
-				<div className="grid gap-16">
+				<div className="grid gap-6">
 					{experience.map((exp, idx) => (
 						<div
 							key={idx}
-							className="group border-b border-slate-100 pb-16 last:border-0"
+							className="group border-b border-slate-100 pb-6 last:border-0 last:pb-0"
 						>
-							<div className="grid md:grid-cols-12 gap-8">
+							<div className="grid md:grid-cols-12 gap-6">
 								{/* Left column: meta */}
-								<div className="md:col-span-4 space-y-3">
+								<div className="md:col-span-4 space-y-2">
 									<div className="flex items-center gap-3">
 										{exp.icon}
-										<span className="font-mono text-[10px] text-blue-600 uppercase tracking-widest">
+										<span className="font-mono text-[11px] md:text-[12px] text-blue-600 uppercase tracking-widest">
 											{exp.period}
 										</span>
 									</div>
@@ -111,7 +125,7 @@ const ExperienceTab = () => {
 										<MapPin size={10} /> {exp.location}
 									</p>
 									{exp.stats && (
-										<div className="pt-2">
+										<div className="pt-1">
 											<span className="px-2 py-0.5 border border-slate-200 text-[9px] font-mono text-slate-500 uppercase tracking-tighter rounded-sm">
 												{exp.stats}
 											</span>
@@ -120,15 +134,15 @@ const ExperienceTab = () => {
 								</div>
 
 								{/* Right column: content */}
-								<div className="md:col-span-8 space-y-4">
-									<h3 className="text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
+								<div className="md:col-span-8 space-y-3">
+									<h3 className="text-xl md:text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
 										{exp.role}
 									</h3>
-									<ul className="space-y-3">
+									<ul className="space-y-2">
 										{exp.points.map((point, pIdx) => (
 											<li
 												key={pIdx}
-												className="flex gap-4 text-[13px] text-slate-600 font-sans leading-relaxed"
+												className="flex gap-3 text-[13px] text-slate-600 font-sans leading-relaxed"
 											>
 												<span className="text-slate-300 font-mono mt-0.5">/</span>
 												{point}
@@ -143,22 +157,22 @@ const ExperienceTab = () => {
 			</section>
 
 			{/* Education (ResearchTab-like layout) */}
-			<section className="space-y-8">
+			<section className="space-y-4">
 				<h3 className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-500">
 					Education
 				</h3>
-				<div className="grid gap-16">
+				<div className="grid gap-6">
 					{education.map((edu, idx) => (
 						<div
 							key={idx}
-							className="group border-b border-slate-100 pb-16 last:border-0"
+							className="group border-b border-slate-100 pb-6 last:border-0 last:pb-0"
 						>
-							<div className="grid md:grid-cols-12 gap-8">
+							<div className="grid md:grid-cols-12 gap-6">
 								{/* Left column: meta */}
-								<div className="md:col-span-4 space-y-3">
+								<div className="md:col-span-4 space-y-2">
 									<div className="flex items-center gap-3">
 										{edu.icon}
-										<span className="font-mono text-[10px] text-slate-600 uppercase tracking-widest">
+										<span className="font-mono text-[11px] md:text-[12px] text-slate-600 uppercase tracking-widest">
 											{edu.period}
 										</span>
 									</div>
@@ -171,11 +185,10 @@ const ExperienceTab = () => {
 								</div>
 
 								{/* Right column: content */}
-								<div className="md:col-span-8 space-y-4">
-									<h3 className="text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
+								<div className="md:col-span-8 space-y-3">
+									<h3 className="text-xl md:text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
 										{edu.degree}
 									</h3>
-									{/* No bullet list for education; add later if needed */}
 								</div>
 							</div>
 						</div>

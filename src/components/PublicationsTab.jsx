@@ -130,11 +130,11 @@ const PublicationsTab = () => {
 									<p className="font-semibold leading-snug">
 										{patent.title}
 									</p>
-									<p className="text-[10px] text-slate-500">
+									<p className="text-xs text-slate-500">
 										{patent.inventors}
 									</p>
 									{patent.summary && (
-										<p className="text-[11px] text-slate-700">
+										<p className="text-xs text-slate-700">
 											{patent.summary}
 										</p>
 									)}
@@ -143,7 +143,7 @@ const PublicationsTab = () => {
 											href={patent.link}
 											target="_blank"
 											rel="noreferrer"
-											className="text-[10px] text-sky-600 hover:underline"
+											className="text-xs text-sky-600 hover:underline"
 										>
 											View on Google Patents
 										</a>
@@ -170,11 +170,11 @@ const PublicationsTab = () => {
 									<p className="font-semibold leading-snug">
 										{patent.title}
 									</p>
-									<p className="text-[10px] text-slate-500">
+									<p className="text-xs text-slate-500">
 										{patent.inventors}
 									</p>
 									{patent.summary && (
-										<p className="text-[11px] text-slate-700">
+										<p className="text-xs text-slate-700">
 											{patent.summary}
 										</p>
 									)}
@@ -183,7 +183,7 @@ const PublicationsTab = () => {
 											href={patent.link}
 											target="_blank"
 											rel="noreferrer"
-											className="text-[10px] text-sky-600 hover:underline"
+											className="text-xs text-sky-600 hover:underline"
 										>
 											View on Google Patents
 										</a>

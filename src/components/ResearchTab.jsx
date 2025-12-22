@@ -202,24 +202,27 @@ const ResearchTab = () => {
   };
 
   return (
-    <div className="space-y-16 animate-in slide-in-from-bottom-4 duration-500">
-      <div className="border-b border-black pb-4">
+    <div className="space-y-12 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="border-b border-black pb-3">
         <h2 className="text-xs font-black uppercase tracking-[0.4em] font-sans text-slate-400">
           Project Portfolio
         </h2>
       </div>
 
-      <div className="grid gap-16">
+      <div className="grid gap-10">
         {researchProjects.map((project, idx) => {
           const isExpanded = expandedIndex === idx;
           return (
-            <div key={idx} className="group border-b border-slate-100 pb-16 last:border-0">
+            <div
+              key={idx}
+              className="group border-b border-slate-100 pb-10 last:border-0 last:pb-0"
+            >
               <div className="grid md:grid-cols-12 gap-8">
                 {/* Meta */}
                 <div className="md:col-span-4 space-y-3">
                   <div className="flex items-center gap-3">
                     {project.icon}
-                    <span className="font-mono text-[10px] text-blue-600 uppercase tracking-widest">
+                    <span className="font-mono text-[11px] md:text-[12px] text-blue-600 uppercase tracking-widest">
                       {project.period}
                     </span>
                   </div>
@@ -236,15 +239,15 @@ const ResearchTab = () => {
                   <button
                     type="button"
                     onClick={() => toggleIndex(idx)}
-                    className="mt-4 text-[11px] font-mono uppercase tracking-[0.16em] text-slate-600 hover:text-blue-700"
+                    className="mt-3 text-[11px] font-mono uppercase tracking-[0.16em] text-slate-600 hover:text-blue-700"
                   >
                     {isExpanded ? 'Hide details' : 'Show details'}
                   </button>
                 </div>
 
                 {/* Content */}
-                <div className="md:col-span-8 space-y-4">
-                  <h3 className="text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
+                <div className="md:col-span-8 space-y-3">
+                  <h3 className="text-xl md:text-2xl font-bold font-sans tracking-tight group-hover:text-blue-700 transition-colors">
                     {project.title}
                   </h3>
 
@@ -259,8 +262,8 @@ const ResearchTab = () => {
                   </div>
 
                   {isExpanded && (
-                    <div className="grid md:grid-cols-2 gap-6 mt-4">
-                      <div className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-5 mt-3">
+                      <div className="space-y-3">
                         <div>
                           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
                             Input
@@ -278,7 +281,7 @@ const ResearchTab = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      <div className="space-y-3">
                         <div>
                           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
                             Approach
