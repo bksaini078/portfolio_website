@@ -4,6 +4,8 @@ import OverviewTab from './components/OverviewTab';
 import ExperienceTab from './components/ExperienceTab';
 import ResearchTab from './components/ResearchTab';
 import PublicationsTab from './components/PublicationsTab';
+import BlogTab from './components/BlogTab';        // ✅ make sure this is here
+import { blogs } from './data/blogs';             // ✅ use external blog data
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -23,7 +25,13 @@ const Portfolio = () => {
     linkedin: "bksaini078",
     github: "bksaini078",
     location: "Stuttgart, Germany",
-    photo: "/bhupender_photo.png"
+    photo: "/bhupender_photo.png",
+    // Reference to the featured blog for use in OverviewTab
+    featuredBlog: {
+      id: blogs[0].id,
+      title: blogs[0].title,
+      date: blogs[0].date,
+    },
   };
 
   return (
@@ -37,7 +45,7 @@ const Portfolio = () => {
           </div>
           
           <nav className="flex space-x-8 font-sans text-[11px] font-bold uppercase tracking-widest text-slate-400">
-            {['overview', 'experience', 'projects', 'publications'].map(tab => (
+            {['overview', 'experience', 'projects', 'publications', 'blog'].map(tab => (  // ✅ include 'blog'
               <button 
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -55,6 +63,7 @@ const Portfolio = () => {
         {activeTab === 'experience' && <ExperienceTab />}
         {activeTab === 'projects' && <ResearchTab />}
         {activeTab === 'publications' && <PublicationsTab />}
+        {activeTab === 'blog' && <BlogTab blogs={blogs} />}   {/* ✅ render BlogTab */}
       </main>
 
       {/* Footer */}

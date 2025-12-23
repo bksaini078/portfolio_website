@@ -34,10 +34,10 @@ const OverviewTab = ({ profile }) => {
             <span className="font-semibold">Multi-Agent Systems</span> &amp;{' '}
             <span className="font-semibold">Behavioral Simulation</span>
           </h3>
-          <p className="text-sm md:text-base leading-relaxed text-slate-600 font-sans max-w-2xl">
+          <p className="text-sm md:text-base leading-relaxed text-slate-600 max-w-2xl">
             Focused on multi-agent systems and LLM-driven behavioral simulation, with an emphasis on designing and evaluating explainable, human-centered AI for decision support, market research, and enterprise solutions.
           </p>
-          <p className="text-sm md:text-base leading-relaxed text-slate-600 font-sans max-w-2xl">
+          <p className="text-sm md:text-base leading-relaxed text-slate-600 max-w-2xl">
             Work centers on collaborative agent reasoning and contextual grounding, building mechanisms that ensure transparency, interpretability, and human oversight in complex, high-stakes environments.
           </p>
           <div className="flex space-x-6 font-sans text-xs pt-4">

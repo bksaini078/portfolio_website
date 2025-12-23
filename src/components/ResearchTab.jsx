@@ -13,7 +13,7 @@ import {
 const researchProjects = [
   {
     title: 'SozioMimic',
-    org: 'Fraunhofer IAO',
+    org: 'Research project with Ministry of Economic Affairs, Labour and Tourism',
     period: 'Feb 2025 – Oct 2025',
     type: 'Digital Human Simulation',
     icon: <Fingerprint size={20} className="text-purple-500" />,
